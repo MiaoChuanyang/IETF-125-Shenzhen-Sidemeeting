@@ -1,0 +1,37 @@
+Minutes of Discussion of use case and requirements of Hybrid Function Chain Sidemeeting
+--------------------------------------------------------------------------
+
+Participants: 
+Chuanyang Miao,Xinxin Yi,Daniel King,Quan Xiong,Daniel Huang,Quan Xiong, Diego Lopez,
+Xiaoqiu Zhang, Feng Yang, Ran Chen, Huakai Fu, Xueyan Song, Yongshen Liu, Weiqiang Chen, Lei Zhou,
+Shiji Wang, Xue Miao,Lucas, Greg Mirsky
+
+The agenda and notes are shown as below.
+
+1,Note well, welcome statements, introduction and agenda bash. 5mins
+
+2, HFC use cases and requirements discussion (State-Of-The-Art and Framework), Chuanyang Miao, ZTE, 10mins
+
+3, A Task Segmentation Framework for Computing-Aware Traffic Steering, Bo Ma, ZJGSU, 10mins
+
+4, Application-Level Computing Power Network for Stateless Computing Services, Shiji Wang, China Unicom,10mins
+
+5, Open Issues Discussion, 25min
+
+Discussion mins:
+
+[Quan] Is the HFC architecture a centralized or a distributed architecture? What's the difference between multiple
+service instances. Could it have multiple connections between service instance. 
+
+[Chuanyang] Yes, currently HFC has a centrialized control plane which collect information of distributed service sites with
+multiple service intances. Those service instances have the same functions. HFC also provides different connection mode such
+one-to-one, one-to-many and many-to-many. 
+
+[Bo] Is the micro functions designe for users or the suppliers? Is it fixed or can be dynamically changed according to service.
+  Can it be a new model for new functions?
+
+[Chuanyang] Those functions are currently fixed but service instances can be dynamically changed. If there is a new function in
+the chain, that is another chain. 
+
+[xueyan] How to understand the relationship between computeing resource and tasks?
+  
