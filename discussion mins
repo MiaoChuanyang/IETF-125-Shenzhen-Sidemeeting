@@ -28,10 +28,14 @@ multiple service intances. Those service instances have the same functions. HFC 
 one-to-one, one-to-many and many-to-many. 
 
 [Bo] Is the micro functions designe for users or the suppliers? Is it fixed or can be dynamically changed according to service.
-  Can it be a new model for new functions?
+Can it be a new model for new functions?
 
 [Chuanyang] Those functions are currently fixed but service instances can be dynamically changed. If there is a new function in
 the chain, that is another chain. 
 
 [xueyan] How to understand the relationship between computeing resource and tasks?
-  
+
+[bo] give a LLM trainning example for dividing big model into small pieces. Computer and network resource should be understood
+by controller and then put test into the best location. 
+
+
