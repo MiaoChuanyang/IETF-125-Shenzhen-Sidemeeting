@@ -38,4 +38,39 @@ the chain, that is another chain.
 [bo] give a LLM trainning example for dividing big model into small pieces. Computer and network resource should be understood
 by controller and then put test into the best location. 
 
+[xueyan] seems provide a new use case to CATS. Any comments from CATS working group?
 
+[bo] received on comments from Jone one year ago. For the computing power allocation, it's not efficient to use computing power
+grained. Network it fix and can not be controlled to march a flexiable strategy. 
+
+[xueyan] Is there any new part to enhance the network architecture?
+
+[bo] We don't propose a new hardware. It's a logic function. CPB and C-TEA provides task sgmentation and execution for data and
+follow the dependency. 
+
+[chuanyang] For L7 computing routing machanism, how to resolve the problem of getting the encryped information from L7 layer
+payload, which may contains the computing power request. 
+
+[shiji] There has a semantic routing system. The L7 encrpted information will be terminated and decrpyed at the edge computing gateway. That
+gateway will then extract information from it. Then the gateway will re-encryped those request by matching the network policies and
+foward it to the back-end instance. Use can only see the gateway address and not aware the actual service instances deployment.
+
+[Chuanyang] The gateway should have the decryption capability and may have a contract with service layer. It's a common problem for
+HFC as well. We should alwary take it into account.
+
+[Chuanyang] HFC is different from SFC is the date will be processed and transferred at each service site, with different data mode.
+Therefore the HFC orchistrator should be implemented in service layer (service mesh), not in network layer. 
+
+[Denial] The LLM use case is not like we have right now. LLM now has a large scale data center and if we put lots of composite metrics
+on it, the time will be taken at the LLM endpoint and it to long, will break model trainning. The media use case is quite intersting.
+It's similiar to object-based media in UK. But the difference it the blend multiple media assets with large scale deployments in real 
+time will need on-path computation. It need a chain to provide in part of competition. That's not included in the current CATS framework.
+It's worth to have a discussion now. CATS can be used to identify the availablity of computing resource and network performance.
+
+Next step:
+
+1) Find a use case with multiple customers that want to deploy the discussed type of view space.
+
+2) Show what existing IETF technology is applicable and clearly highlight where the gaps are.
+
+3) Identify in part capable compute nodes and chain them together based on cloud and network metrics.
